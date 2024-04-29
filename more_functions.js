@@ -22,10 +22,10 @@ changeDue = (totalDue - amountPaid)
 console.log(changeDue)
 
 
-function getNumGrandkids() {
+function getNumGrandKids(num) {
     return 6;
 }
- let num = getNumGrandkids();
+ let num = getNumGrandKids();
  console.log(num);
 
 function getNumGrandkids(name) {
