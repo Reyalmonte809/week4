@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="main.js"></script>
+   </head>
+   <body>
+    <fieldset>
+        <legend> ACME Car Rental</legend>
+        <span>Pickup date:</span><input type="date" class="pickUp" id="pickUp" value="pickUp"> <br>
+        <span>Number of days:</span><input type="date" class="numDays" id="numDays" value="numDays"><br>
+        <p>Options</p>
+        <input type="checkbox" class="tollTag" id="tollTag" value="tollTag" name="tollTag">Electronic Toll Tag (3.95/day + tolls)<br>
+        <input type="checkbox" class="gps" id="gps" value="gps" name="gps"> GPS (2.95/day)<br>
+        <input type="checkbox" class="roadside" id="roadside" value="roadside" name="roadside">Roadside Assistance(2.95/day)<br>
+        <p>Under 25</p>
+        <input type="radio" class="no" id="no" name="no" value="no"> No 
+        <input type="radio" class="yes" id="yes" name="yes" value="yes">Yes<br>
+        <button id="submitButton" class="submitButton">Estimate Total Cost</button>
+        <table>
+            <tr>
+                <td>Car rental</td>
+                <td>xxx.xx</td>
+            </tr>
+            <tr> 
+                <td>Options</td>
+                <td>xx.xx</td>
+            </tr>
+            <tr>
+                <td>Under25 Surcharge</td>
+                <td>xx.xx</td>
+            </tr>
+            <tr>
+                <td>Total Due</td>
+                <td>xxx.xx</td>
+            </tr>
+
+        </table>
+    </fieldset>
+   </body>
+</html>

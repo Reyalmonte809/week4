@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // window.onload = e => {
+        //     buttonElement.onclick = () => {
+        //         outputElement.innerText = inputElement.value + ", that tickles"
+        //     }            
+
+        // };
+        window.addEventListener("load",()=>{
+            buttonElement.addEventListener("click", ()=>{
+                outputElement.innerText = inputElement.value + ", that tickles"
+            })
+        });
+    </script>
+</head>
+<body>
+    <input type="text" id="inputElement" placeholder="name">
+    <button id="buttonElement">Click Me!!!</button>
+    <p id="outputElement">?</p>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="common.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <fieldset>
+        <span>Number of scoops </span><input type="text" class="number" id="number"><br>
+        <div class="conecupOptions">
+            <input type="radio" class="cone" id="cone" name="cone" checked="false">Cone
+            <input type="radio" class="cup" id="cup" name="cup" checked="true">Cup
+        </div>
+        <div class="topping" id="topping">
+            <div class="title">Toppings</div>
+            <table>
+                <tr>
+                    <td><input type="checkbox" class="Sprinkles" id="Sprinkles" >Sprinkles($0.50)</td>
+                    <td><input type="checkbox" class="cream" id="cream">Whipped Cream($0.25)</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="fudge" id="fudge">Hot Fudge($1.25)</td>
+                    <td><input type="checkbox" class="cherry" id="cherry">Cherry($0.25</td>
+                </tr>
+            </table>
+            <button id="submitButton">Submit Order</button> 
+          
+        </div>
+         <table class="totals">
+            <tr>
+                <td>Bases Price:</td>
+                <td id="basedPriceElement">0.00</td>
+            </tr>
+            
+            <tr>
+                <td>Tax:</td>
+                <td id="taxElement">0.00</td>
+            </tr>
+            
+            <tr>
+                <td>Total Due</td>
+                <td id="totalElement">0.00</td>
+            </tr>
+        </table>
+    </fieldset>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="common.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <label>Number of Scoops:<input type="number" value="1" id="scoopsElement"></label>
+    <div class="coneCupOptions">
+        <label><input type="radio" name="container" checked="false" id="coneElement">Cone</label>
+        <label><input type="radio" name="container" checked="true" id="cupElement">Cup</label>
+    </div><!-- END OF coneCupOptions -->
+    <div class="toppings" id="toppings">
+        <div class="title">Toppings</div>
+        <table>
+            <tr>
+                <td><input type="checkbox" id="sprinklesElement">Sprinkles ($.50)</td>
+                <td><input type="checkbox" id="whippedElement">Whipped Cream ($.25)</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="fudgeElement">Hot Fudge ($1.25)</td>
+                <td><input type="checkbox" id="cherryElement">Cherry ($.25)</td>
+            </tr>
+        </table>
+    </div>
+    <button id="submitOrder">Submit Order</button>
+    <table class="totals">
+        <tr>
+            <th>Base Price:</td>
+            <td id="basePriceElement">$0.00</td>
+        </tr>
+        <tr>
+            <th>Tax:</td>
+            <td id="taxElement">$0.00</td>
+        </tr>
+        <tr>
+            <th>Total Due:</td>
+            <td id="totalElement">$0.00</td>
+        </tr>
+    </table>
+</body>
+
+</html>
