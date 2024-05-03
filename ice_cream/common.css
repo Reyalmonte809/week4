@@ -1,4 +1,4 @@
-/* body {
+ body {
     max-width: 50%;
     width: 100%;
     text-align: center;
@@ -8,12 +8,12 @@
     gap: 1rem;  */
     
     
-/* } */
+ } 
 /* fieldset{
     /* margin: 2rem 0rem;    */
   
-/* } */
-/* button  {
+ 
+ button  {
     display: block;
     margin: auto;
     padding: .5rem;
@@ -39,8 +39,14 @@
 .hidden {
     opacity: 0;
     transition: ease-in-out 1sec;
-}  */
+}  
 
+
+
+
+
+
+/* 
 body{ 
     display: flex;
     flex-direction: column;
@@ -77,4 +83,4 @@ th, .toppings>* {
 .hidden{
     opacity: 0;
     transition: opacity ease-in-out 1s;
-}
+} */

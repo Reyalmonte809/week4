@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,29 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
   <link rel="stylesheet" href="common.css">
-    <script src="main.js"></script>
+    
 </head>
 
 <body>
     <fieldset>
-        <span>Number of scoops </span><input type="text" class="number" id="number"><br>
+        <span>Number of scoops </span><input type="number" class="number" id="scoopsElement"><br>
         <div class="conecupOptions">
-            <input type="radio" class="cone" id="cone" name="cone" checked="false">Cone
-            <input type="radio" class="cup" id="cup" name="cup" checked="true">Cup
+            <input type="radio" class="cone" id="coneElement" name="container" checked="false">Cone
+            <input type="radio" class="cup" id="cupElement" name="container" checked="true">Cup
         </div>
         <div class="topping" id="topping">
             <div class="title">Toppings</div>
             <table>
                 <tr>
-                    <td><input type="checkbox" class="Sprinkles" id="Sprinkles" >Sprinkles($0.50)</td>
-                    <td><input type="checkbox" class="cream" id="cream">Whipped Cream($0.25)</td>
+                    <td><input type="checkbox" class="Sprinkles" id="SprinklesElement" >Sprinkles($0.50)</td>
+                    <td><input type="checkbox" class="cream" id="creamElement">Whipped Cream($0.25)</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" class="fudge" id="fudge">Hot Fudge($1.25)</td>
-                    <td><input type="checkbox" class="cherry" id="cherry">Cherry($0.25</td>
+                    <td><input type="checkbox" class="fudge" id="fudgeElement">Hot Fudge($1.25)</td>
+                    <td><input type="checkbox" class="cherry" id="cherryElement">Cherry($0.25)</td>
                 </tr>
             </table>
-            <button id="submitButton">Submit Order</button> 
+            <button id="submitOrder">Submit Order</button> 
           
         </div>
          <table class="totals">
@@ -49,10 +49,13 @@
         </table>
     </fieldset>
 </body>
+<script src="main.js"></script>
+</html>
 
-</html> -->
 
-<!DOCTYPE html>
+
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -68,7 +71,7 @@
     <div class="coneCupOptions">
         <label><input type="radio" name="container" checked="false" id="coneElement">Cone</label>
         <label><input type="radio" name="container" checked="true" id="cupElement">Cup</label>
-    </div><!-- END OF coneCupOptions -->
+    </div>
     <div class="toppings" id="toppings">
         <div class="title">Toppings</div>
         <table>
@@ -99,4 +102,4 @@
     </table>
 </body>
 
-</html>
+</html> -->

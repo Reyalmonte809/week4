@@ -1,61 +1,61 @@
-// document.addEventListener("DOMContentLoaded", ()=>{
+document.addEventListener("DOMContentLoaded", ()=>{
 
-//     function updateDisplay(){
-//         const cup = cup.checked;
+    function updateDisplay(){
+        const cup = cupElement.checked;
         
-//         if(cup){
-//             topping.classList.remove("hidden")
-//         }
-//         else{
-//         topping.classList.add("hidden")
-//         }
-//         topping.classList.remove("hidden")
-//         topping.classList.add("hidden")
-//     }
-//     cone.onclick = updateDisplay;
-//     cup.onclick = updateDisplay;
+        if(cup){
+            topping.classList.remove("hidden")
+        }
+        else{
+        topping.classList.add("hidden")
+        }
+        topping.classList.remove("hidden")
+        topping.classList.add("hidden")
+    }
+    coneElement.onclick = updateDisplay;
+    cupElement.onclick = updateDisplay;
 
-//     sumbmitButton.addEventListener("click", ()=>{
-//         const scoops = Number(number.value);
+    submitOrder.addEventListener("click", ()=>{
+        const scoops = Number(scoopsElement.value);
 
-//         const cone = cone.checked;
-//         const cup = cup.checked;
+        const cone = coneElement.checked;
+        const cup = cupElement.checked;
 
-//         const sprinkles = sprinkle.checked; 
-//         const cream = cream.checked; 
-//         const fudge = fudge.checked; 
-//         const cherry = cherry.checked; 
+        const sprinkles = SprinklesElement.checked; 
+        const cream = creamElement.checked; 
+        const fudge = fudgeElement.checked; 
+        const cherry = cherryElement.checked; 
 
-//         let basePrice = 0;
-//         let tax = 0;
-//         let total = 0;
+        let basedPrice = 0;
+        let tax = 0;
+        let total = 0;
 
-//         basedPrice = 2.25;
-//         if(scoops > 1){
-//             basedPrice += 1.25 (scoops - 1)
-//         }
-//         if(cup){
-//             if (sprinkles){
-//                 basePrice += 0.50
-//             }
-//             if (cream){
-//                 basePrice += 0.25
-//             }
-//             if (fudge){
-//                 basePrice += 1.25
-//             }
-//             if (cherry){
-//                 basedPrice += 0.25
-//             }
-//         }
-//         tax = basePrice * 0.07
-//         total = basePrice + tax
+        basedPrice = 2.25;
+        if(scoops > 1){
+            basedPrice += 1.25 * (scoops - 1)
+        }
+        if(cup){
+            if (sprinkles){
+                basedPrice += 0.50
+            }
+            if (cream){
+                basedPrice += 0.25
+            }
+            if (fudge){
+                basedPrice += 1.25
+            }
+            if (cherry){
+                basedPrice += 0.25
+            }
+        }
+        tax = basedPrice * 0.07
+        total = basedPrice + tax
 
-//         basePriceElement.innerText = "$" + basePrice.toFixed(2);
-//         taxElement.innerText = "$" + tax.toFixed(2);
-//         totalElement.innerText = "$" + total.toFixed(2);
-//     });
-// });
+        basedPriceElement.innerText = "$" + basedPrice.toFixed(2);
+        taxElement.innerText = "$" + tax.toFixed(2);
+        totalElement.innerText = "$" + total.toFixed(2);
+    });
+});
 
 
 
@@ -80,66 +80,66 @@
 //     extraPerDay += 0.25
 // }
 
-document.addEventListener("DOMContentLoaded", ()=>{
+// document.addEventListener("DOMContentLoaded", ()=>{
 
-    function updateDisplay(){
-        const cup = cupElement.checked; //EVEN THOUGH ITS A RADIO
+//     function updateDisplay(){
+//         const cup = cupElement.checked; //EVEN THOUGH ITS A RADIO
 
-        if(cup){
-            toppings.classList.remove("hidden")
-        }else{
-            toppings.classList.add("hidden")
-        }
-    }
-    coneElement.onclick = updateDisplay;
-    cupElement.onclick = updateDisplay;
+//         if(cup){
+//             toppings.classList.remove("hidden")
+//         }else{
+//             toppings.classList.add("hidden")
+//         }
+//     }
+//     coneElement.onclick = updateDisplay;
+//     cupElement.onclick = updateDisplay;
 
-    submitOrder.addEventListener("click", ()=>{
+//     submitOrder.addEventListener("click", ()=>{
         
-        //GET AND CONVERT ELEMENT VALUES TO LOCAL JS VARIABLES
+//         //GET AND CONVERT ELEMENT VALUES TO LOCAL JS VARIABLES
 
-        // LOCAL JAVASCRIPT INPUT VARIABLES
-        const scoops = Number(scoopsElement.value);
+//         // LOCAL JAVASCRIPT INPUT VARIABLES
+//         const scoops = Number(scoopsElement.value);
 
-        const cone = coneElement.checked; //NOTE CHECKED NOT VALUE
-        const cup = cupElement.checked; //EVEN THOUGH ITS A RADIO
+//         const cone = coneElement.checked; //NOTE CHECKED NOT VALUE
+//         const cup = cupElement.checked; //EVEN THOUGH ITS A RADIO
 
-        const sprinkles = sprinklesElement.checked;
-        const whipped = whippedElement.checked;
-        const fudge = fudgeElement.checked;
-        const cherry = cherryElement.checked;
+//         const sprinkles = sprinklesElement.checked;
+//         const whipped = whippedElement.checked;
+//         const fudge = fudgeElement.checked;
+//         const cherry = cherryElement.checked;
 
-        // LOCAL JAVASCRIPT OUTPUT VARIABLES
-        let basePrice = 0;
-        let tax = 0;
-        let total = 0;
+//         // LOCAL JAVASCRIPT OUTPUT VARIABLES
+//         let basePrice = 0;
+//         let tax = 0;
+//         let total = 0;
 
-        //START LOGIC
-        basePrice = 2.25;
-        if(scoops > 1){
-            basePrice += 1.25 * (scoops - 1);
-        } 
-        if(cup){
-            if(sprinkles){
-                basePrice += 0.50
-            }
-            if(whipped){
-                basePrice += 0.25
-            }
-            if(fudge){
-                basePrice += 1.25
-            }
-            if(cherry){
-                basePrice += 0.25
-            }
-        }
-        tax = basePrice * 0.08
-        total = basePrice + tax
-        //UPDATE DISPLAY
-        basePriceElement.innerText = "$" + basePrice.toFixed(2);
-        taxElement.innerText = "$" + tax.toFixed(2);
-        totalElement.innerText = "$" + total.toFixed(2);
+//         //START LOGIC
+//         basePrice = 2.25;
+//         if(scoops > 1){
+//             basePrice += 1.25 * (scoops - 1);
+//         } 
+//         if(cup){
+//             if(sprinkles){
+//                 basePrice += 0.50
+//             }
+//             if(whipped){
+//                 basePrice += 0.25
+//             }
+//             if(fudge){
+//                 basePrice += 1.25
+//             }
+//             if(cherry){
+//                 basePrice += 0.25
+//             }
+//         }
+//         tax = basePrice * 0.08
+//         total = basePrice + tax
+//         //UPDATE DISPLAY
+//         basePriceElement.innerText = "$" + basePrice.toFixed(2);
+//         taxElement.innerText = "$" + tax.toFixed(2);
+//         totalElement.innerText = "$" + total.toFixed(2);
 
-    });// end click
+//     });// end click
 
-}); //end content loaded
+// }); //end content loaded
